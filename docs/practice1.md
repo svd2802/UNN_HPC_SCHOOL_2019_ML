@@ -333,14 +333,14 @@ __Дополнительные задачи:__
 необходимо дописать собственные аргументы, такие как путь до изображения,
 новые размеры изображения и т.д. Параметры описываются следующим образом:  
 
-    ```python
-        def build_argparse(): 
-            parser = argparse.ArgumentParser()
+```python
+    def build_argparse(): 
+        parser = argparse.ArgumentParser()
             
-            parser.add_argument('-a1', '--argument1', help = 'your cmd \
+        parser.add_argument('-a1', '--argument1', help = 'your cmd \
             argument', type = str)
 
-    ```
+```
 
 где `-a1` - короткое имя аргумента, `--argument1` - полное имя аргумента, `type` - тип аргумента (`int`, `float`, `str` и т.д.).
 
@@ -352,12 +352,10 @@ __Дополнительные задачи:__
 
 Чтение параметров в основной программе происходит по их полному имени:
 
-    ```python
-        args = build_argparse().parse_args()
-        
-        variable = args.argument1 
-            
-    ```
+```python
+    args = build_argparse().parse_args()
+    variable = args.argument1             
+```
 
 <!-- LINKS -->
 [opencv]: https://opencv.org
