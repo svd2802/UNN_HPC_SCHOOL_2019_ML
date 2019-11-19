@@ -110,7 +110,7 @@ of OpenVINO toolkit, необходимо выполнить установку 
 
 ### Создание класса `InferenceEngineDetector`
  
- 1. Создать рабочую ветку `practice-3` ( см. [Практика1][practice1]).
+ 1. Создать рабочую ветку `practice-3` ( см. [практику 1][practice1]).
  1. В файле `src/ie_detector.py` реализовать конструктор класса `InferenceEngineDetector`. 
     Конструктор получает следующие параметры:
 
