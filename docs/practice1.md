@@ -78,18 +78,18 @@ __Дополнительные задачи:__
      1. Воспользоваться перечнем инструкций, описанных в разделе
         [Общие инструкции по работе с Git][git-intro]).		
  
-            ```bash
-            $ cd C:\
-            $ git clone https://github.com/<@github-account>/UNN_HPC_SCHOOL_2019_ML.git
-            ``` 
+        ```bash
+        $ cd C:\
+        $ git clone https://github.com/<@github-account>/UNN_HPC_SCHOOL_2019_ML.git
+        ``` 
             
    1. Удостовериться, что семпл работает - запустить командную строку, в ней 
       запустить скрипт с вашим приложением.
 
-            ```bash
-            $ cd UNN_HPC_SCHOOL_2019_ML/samples
-            $ python practice1_template.py
-            ```
+      ```bash
+      $ cd UNN_HPC_SCHOOL_2019_ML/samples
+      $ python practice1_template.py
+      ```
 	 
   1. Создать рабочую ветку (раздел [Общие инструкции по работе с Git][git-intro]).
   
