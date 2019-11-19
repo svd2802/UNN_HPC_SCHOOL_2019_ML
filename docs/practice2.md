@@ -84,7 +84,7 @@ of OpenVINO toolkit, необходимо выполнить установку 
         
     В консоли должны появиться сообщения, аналогичные представленным.
         
-    ![practice2_configure_mo](/images/practice2_configure_mo.png)
+    ![practice2_configure_mo](images/practice2_configure_mo.png)
 
  1. Не закрывайте текущую командную строку. Если вы закроете ее, то вам
     придется заново активировать виртуальную рабочую среду и запустить скрипт 
