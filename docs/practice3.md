@@ -117,6 +117,7 @@ __Основные задачи:__
  1. Добавьте в ваше демо-приложение измерение скорости работы модели.
     Для измерения производительности вывода глубоких моделей в синхронном режиме
     необходимо использовать следующие показатели:
+
       - __Латентность (latency)__ - среднее время прямого прохода по модели.
         Для определения латентности вывод выполняется многократно (количество
         запусков = количество итераций). На каждой итерации измеряется время вывода
@@ -135,6 +136,7 @@ __Основные задачи:__
 <!-- LINKS -->
 [calibration-docs]: https://docs.openvinotoolkit.org/2019_R3.1/_inference_engine_tools_calibration_tool_README.html
 [pascal-voc-2007]: https://pjreddie.com/projects/pascal-voc-dataset-mirror/
+[practice_1]: practice1.md
 [practice_2]: practice2.md
 [adapters]: http://docs.openvinotoolkit.org/2019_R3.1/_tools_accuracy_checker_accuracy_checker_adapters_README.html
 [convert_annotation]: http://docs.openvinotoolkit.org/2019_R3.1/_tools_accuracy_checker_accuracy_checker_annotation_converters_README.html
