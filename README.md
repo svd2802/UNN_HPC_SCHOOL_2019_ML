@@ -10,6 +10,6 @@
 
 Практические работы:
 
-- [Практическая работы №1](https://github.com/itlab-vision/UNN_HPC_SCHOOL_2019_ML/blob/master/docs/practice1.md).
-- Практическая работы №2.
-- Практическая работы №3.
+- [Практическая работа №1. Инструменты разработки ПО, базовые функции Python, библиотека OpenCV](https://github.com/itlab-vision/UNN_HPC_SCHOOL_2019_ML/blob/master/docs/practice1.md).
+- Практическая работа №2.
+- Практическая работа №3.
