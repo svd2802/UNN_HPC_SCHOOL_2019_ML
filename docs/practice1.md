@@ -103,16 +103,16 @@ __Дополнительные задачи:__
   
   1. Открыть консоль Anaconda (Anaconda Prompt) и создать новую виртуальную среду.
   
-            ```bash
-            $ conda create -n openvino
-            $ conda activate openvino
-            ```
+     ```bash
+     $ conda create -n openvino
+     $ conda activate openvino
+     ```
             
   1. В открытой консоли Anaconda установить библиотеку OpenCV.
   
-            ```bash
-            $ conda install opencv
-            ```
+     ```bash
+     $ conda install opencv
+     ```
   
   1. В файле `practice1_YOUR_NAME.py` реализовать чтение файла изображения при 
      помощи имени файла, полученного из аргументов командной строки, и вывести это 
@@ -163,41 +163,41 @@ __Дополнительные задачи:__
   1. Клонировать [origin][origin] репозиторий к себе на локальный компьютер,
      воспользовавшись следующей командой:
 
-        ```bash
-        $ git clone https://github.com/   <github-account>   /UNN_HPC_SCHOOL_2019_ML
-        ```
+     ```bash
+     $ git clone https://github.com/   <github-account>   /UNN_HPC_SCHOOL_2019_ML
+     ```
 
   1. Перейти в директорию `UNN-HPC-SCHOOL-2019-OPENVINO`:
 
-        ```bash
-        $ cd ./UNN_HPC_SCHOOL_2019_ML
-        ```
+     ```bash
+     $ cd ./UNN_HPC_SCHOOL_2019_ML
+     ```
 
   1. Настроить адрес upstream-репозитория (потребуется при обновлении локальной
      версии репозитория):
 
-        ```bash
-        $ git remote add upstream https://github.com/itlab-vision/UNN_HPC_SCHOOL_2019_ML
-        ```
+     ```bash
+     $ git remote add upstream https://github.com/itlab-vision/UNN_HPC_SCHOOL_2019_ML
+     ```
 
   1. Настроить имя пользователя и e-mail, из под которого будут выполняться
      все операции с репозиторием Git:
 
-        ```bash
-        $ git config --local user.name "github-account"
-        $ git config --local user.email "github-email"
-        ```
+     ```bash
+     $ git config --local user.name "github-account"
+     $ git config --local user.email "github-email"
+     ```
 
-        Примечание: если не выполнить указанную операцию при попытке
-        размещения изменений на сервер, они попадут под аккаунтом пользователя
-        компьютера.
+     Примечание: если не выполнить указанную операцию при попытке
+     размещения изменений на сервер, они попадут под аккаунтом пользователя
+     компьютера.
   
   1. Настроить редактор, который будет использован, если вносятся изменения
      в историю репозитория (в частности, при слиянии веток).
   
-        ```bash
-        $ git config --local core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -n -w"
-        ```
+     ```bash
+     $ git config --local core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -n -w"
+     ```
         
         Когда сделан форк репозитория у вас создается по умолчанию единственная ветка
         master. Тем не менее, при решении независимых задач следует создавать рабочие
