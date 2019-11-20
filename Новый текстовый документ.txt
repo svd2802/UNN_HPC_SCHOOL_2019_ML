@@ -1,0 +1,4 @@
+python "C:\UNN_HPC_SCHOOL_2019_ML\samples\practice2_sumin_viktor.py" -c "C:\UNN_HPC_SCHOOL_2019_ML\model\public\mobilenet-ssd\FP16\mobilenet-ssd.xml" -w "C:\UNN_HPC_SCHOOL_2019_ML\model\public\mobilenet-ssd\FP16\mobilenet-ssd.bin"
+
+
+cd "C:\UNN_HPC_SCHOOL_2019_ML\samples"

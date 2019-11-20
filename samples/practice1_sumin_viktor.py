@@ -29,19 +29,21 @@ def main():
     image = cv2.imread(image_path)
     log.info(image.shape)
     
-    filter_gray = ImageFilter(gray = True, shape = (image.shape[0], image.shape[1]), crop = False)
+    filter_gray = ImageFilter(gray = True, shape = (image.shape[1], image.shape[0]), crop = False)
     image_gray = filter_gray.process_image(image)
     cv2.imshow("Gray", image_gray)
+    log.info(image_gray.shape)
     
     filter_shape = ImageFilter(gray = False, shape = (args.width, args.high), crop = False)
     image_shape = filter_shape.process_image(image)   
     cv2.imshow("Shape", image_shape)
+    log.info(image_shape.shape)
     
-    filter_crop = ImageFilter(gray = False, shape = (image.shape[0], image.shape[1]), crop = True)
+    filter_crop = ImageFilter(gray = False, shape = (image.shape[1], image.shape[0]), crop = True)
     image_crop = filter_crop.process_image(image)
-    cv2.imshow("Image", image_crop)
-    
+    cv2.imshow("Crop", image_crop)
     log.info(image_crop.shape)
+    
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     #
