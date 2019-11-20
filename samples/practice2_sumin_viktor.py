@@ -32,19 +32,11 @@ def main():
     image = cv2.imread(image_path)
     log.info(image.shape)
     
-    IEDetector.detect(image)
-    #filter_gray = ImageFilter(gray = True, shape = (image.shape[1], image.shape[0]), crop = False)
-    #image_gray = filter_gray.process_image(image)
-    #cv2.imshow("Image", image)
-    
-    
+    #IEDetector.detect(image)
 
-
-
-    #
-    # Add your code here
-    #
-    
+    cv2.imshow("Image", IEDetector.detect(image))
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()    
     return 
 
 if __name__ == '__main__':

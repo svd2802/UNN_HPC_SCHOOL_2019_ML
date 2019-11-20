@@ -2,3 +2,5 @@ python "C:\UNN_HPC_SCHOOL_2019_ML\samples\practice2_sumin_viktor.py" -c "C:\UNN_
 
 
 cd "C:\UNN_HPC_SCHOOL_2019_ML\samples"
+
+cd "C:\Programm Files (x86)\IntelSWTools\openvino\bin\"

@@ -45,11 +45,7 @@ def main():
     log.info(image_crop.shape)
     
     cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    #
-    # Add your code here
-    #
-    
+    cv2.destroyAllWindows()  
     return
     
 if __name__ == '__main__':
