@@ -1,6 +1,11 @@
-python "C:\UNN_HPC_SCHOOL_2019_ML\samples\practice2_sumin_viktor.py" -c "C:\UNN_HPC_SCHOOL_2019_ML\model\public\mobilenet-ssd\FP16\mobilenet-ssd.xml" -w "C:\UNN_HPC_SCHOOL_2019_ML\model\public\mobilenet-ssd\FP16\mobilenet-ssd.bin"
+python "C:\UNN_HPC_SCHOOL_2019_ML\samples\practice2_sumin_viktor.py" -c "C:\UNN_HPC_SCHOOL_2019_ML\model\public\mobilenet-ssd\FP32\mobilenet-ssd_i8.xml" -w "C:\UNN_HPC_SCHOOL_2019_ML\model\public\mobilenet-ssd\FP32\mobilenet-ssd_i8.bin" -i "C:\UNN_HPC_SCHOOL_2019_ML\docs\images\2.jpg" -d CPU -l "C:\Program Files (x86)\IntelSWTools\openvino\inference_engine\bin\intel64\Release\cpu_extension_avx2.dll"
 
 
 cd "C:\UNN_HPC_SCHOOL_2019_ML\samples"
 
 cd "C:\Programm Files (x86)\IntelSWTools\openvino\bin\"
+
+
+python "C:\Program Files (x86)\IntelSWTools\openvino_2019.3.379\deployment_tools\tools\accuracy_checker_tool\convert_annotation.py" voc_detection --annotations_dir C:\VOCdevkit\VOC2007\Annotations  --imageset_file C:\VOCdevkit\VOC2007\ImageSets\Main\train.txt --images_dir C:\VOCdevkit\VOC2007\JPEGImages -a C:\openvino_calibration\train_images.pickle -m C:\openvino_calibration\train_images.meta -ss 100
+
+python "C:\Program Files (x86)\IntelSWTools\openvino_2019.3.379\deployment_tools\tools\calibration_tool\calibrate.py" -c C:\UNN_HPC_SCHOOL_2019_ML\sdd_calibrate.yml -m C:\UNN_HPC_SCHOOL_2019_ML\models -s C:\UNN_HPC_SCHOOL_2019_ML -M "C:\Program Files (x86)\IntelSWTools\openvino_2019.3.379\deployment_tools\model_optimizer" --annotations C:\UNN_HPC_SCHOOL_2019_ML

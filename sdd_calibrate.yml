@@ -1,0 +1,27 @@
+models:
+  - name: mobilenet-ssd
+    launchers:
+      - framework: dlsdk
+        device: CPU
+        model: C:/UNN_HPC_SCHOOL_2019_ML/models/public/mobilenet-ssd/FP32/mobilenet-ssd.xml
+        weights: C:/UNN_HPC_SCHOOL_2019_ML/models/public/mobilenet-ssd/FP32/mobilenet-ssd.bin
+        adapter: ssd
+        cpu_extensions: C:/Program Files (x86)/IntelSWTools/openvino_2019.3.379/inference_engine/bin/intel64/Release/cpu_extension_avx2.dll
+
+    datasets:
+      - name: VOC2007
+        data_source: C:/VOCdevkit/VOC2007/JPEGImages
+        annotation: C:/openvino_calibration/train_images.pickle
+        dataset_meta: C:/openvino_calibration/train_images.meta
+        preprocessing:
+          - type: resize
+            size: 300
+          - type: normalization
+            mean: 104, 117, 123
+        postprocessing:
+          - type: resize_prediction_boxes
+        metrics:
+          - type: map
+            integral: 11point
+            ignore_difficult: True
+            presenter: print_scalar
